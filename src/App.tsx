@@ -52,18 +52,18 @@ export default function App() {
 
   const services = [
     {
-      title: "Mariages & Cérémonies",
-      description: "Arrivez avec élégance lors de votre grand jour. Décoration florale et chauffeur en tenue sur demande.",
+      title: "Cortège des Mariés",
+      description: "Une arrivée majestueuse devant l'autel ou la mairie. Décoration florale personnalisée et chauffeur en tenue de gala.",
       icon: <Star className="w-6 h-6" />
     },
     {
-      title: "Transferts VIP",
-      description: "Gares et Aéroports (Luxembourg, Paris, Francfort). Ponctualité et discrétion garanties.",
+      title: "Shooting Photo",
+      description: "Notre véhicule de prestige devient l'écrin de vos souvenirs. Mise à disposition pour vos séances photos de couple.",
       icon: <MapPin className="w-6 h-6" />
     },
     {
-      title: "Sorties & Soirées",
-      description: "Vivez une expérience inoubliable pour vos anniversaires, galas ou soirées privées.",
+      title: "Navette Invités",
+      description: "Assurez le retour de vos proches en toute sécurité. Service de navettes entre le lieu de réception et les hôtels.",
       icon: <GlassWater className="w-6 h-6" />
     }
   ];
@@ -76,14 +76,14 @@ export default function App() {
           <Logo />
           <div className="flex flex-col">
             <span className="font-serif text-lg tracking-widest uppercase font-medium leading-tight">Riri Jour-J</span>
-            <span className="text-[7px] uppercase tracking-[0.4em] text-stone-500 font-bold -mt-1">Prestige Chauffeur</span>
+            <span className="text-[7px] uppercase tracking-[0.4em] text-stone-500 font-bold -mt-1">Prestige Chauffeur de Mariage</span>
           </div>
         </div>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-stone-400">
-          <a href="#flotte" className="hover:text-white transition-colors">La Flotte</a>
-          <a href="#services" className="hover:text-white transition-colors">Services</a>
+          <a href="#flotte" className="hover:text-white transition-colors">La Voiture</a>
+          <a href="#services" className="hover:text-white transition-colors">Prestations</a>
           <a href="#contact" className="hover:text-white transition-colors">Réservation</a>
         </div>
 
@@ -92,7 +92,7 @@ export default function App() {
             href="#contact" 
             className="hidden md:block bg-white text-stone-950 px-6 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest hover:bg-stone-200 transition-colors"
           >
-            Devis Gratuit
+            Devis Mariage
           </a>
           <button 
             className="md:hidden text-white"
@@ -109,8 +109,8 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="absolute top-full left-0 w-full bg-stone-950 border-b border-white/5 py-8 px-6 flex flex-col gap-6 md:hidden"
           >
-            <a href="#flotte" onClick={() => setIsMenuOpen(false)} className="text-sm uppercase tracking-widest">La Flotte</a>
-            <a href="#services" onClick={() => setIsMenuOpen(false)} className="text-sm uppercase tracking-widest">Services</a>
+            <a href="#flotte" onClick={() => setIsMenuOpen(false)} className="text-sm uppercase tracking-widest">La Voiture</a>
+            <a href="#services" onClick={() => setIsMenuOpen(false)} className="text-sm uppercase tracking-widest">Prestations</a>
             <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-sm uppercase tracking-widest">Réservation</a>
           </motion.div>
         )}
@@ -130,21 +130,21 @@ export default function App() {
           className="relative z-20 text-center max-w-4xl"
         >
           <span className="inline-block px-4 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] uppercase font-bold tracking-[0.3em] text-stone-400 mb-8 backdrop-blur-sm">
-            Chauffeur Privé & Location de Prestige - Moselle 57
+            Location de Voiture de Prestige pour Mariage - Moselle 57
           </span>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.9] mb-8 font-extralight italic">
-            L'Élégance <br />
-            <span className="text-white">en Mouvement</span>
+            Sublimez <br />
+            <span className="text-white">votre Grand Jour</span>
           </h1>
           <p className="text-stone-400 max-w-xl mx-auto text-lg md:text-xl font-light leading-relaxed mb-12 italic">
-            "Pour que chaque trajet soit un souvenir d'exception."
+            "Pour que votre arrivée soit aussi inoubliable que votre 'Oui'."
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full md:w-auto bg-white text-stone-950 px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-white/10"
             >
-              Réserver votre chauffeur
+              Devis Mariage Personnalisé
             </button>
             <a 
               href="https://www.instagram.com/ririjourj57" 
@@ -166,9 +166,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
             <div className="max-w-xl">
-              <h2 className="text-4xl md:text-5xl font-serif mb-6 italic">Nos Prestations</h2>
+              <h2 className="text-4xl md:text-5xl font-serif mb-6 italic">Prestations Nuptiales</h2>
               <p className="text-stone-400 leading-relaxed font-light">
-                Qu'il s'agisse de votre mariage, d'un déplacement professionnel au Luxembourg ou d'une soirée VIP, nous mettons tout en œuvre pour que votre voyage soit un moment de sérénité absolue.
+                Nous comprenons l'importance de chaque détail pour votre mariage. Notre service est conçu pour apporter cette touche de prestige et de sérénité nécessaire à la réussite de votre union en Moselle et au Luxembourg.
               </p>
             </div>
             <div className="flex gap-4">
@@ -233,9 +233,9 @@ export default function App() {
             <div className="grid grid-cols-2 gap-10">
               {[
                 { icon: <ShieldCheck className="w-6 h-6" />, label: "Sécurité", desc: "Chauffeurs certifiés" },
-                { icon: <Clock className="w-6 h-6" />, label: "Ponctualité", desc: "Présence anticipée" },
-                { icon: <GlassWater className="w-6 h-6" />, label: "Expérience", desc: "Boissons & Snack" },
-                { icon: <CalendarDays className="w-6 h-6" />, label: "Sur-mesure", desc: "Wedding Planner" },
+                { icon: <Clock className="w-6 h-6" />, label: "Ponctualité", desc: "Arrivée 1h avant" },
+                { icon: <GlassWater className="w-6 h-6" />, label: "Expérience", desc: "Rafraîchissements" },
+                { icon: <CalendarDays className="w-6 h-6" />, label: "Sur-mesure", desc: "Déco Personnalisée" },
               ].map((item, i) => (
                 <div key={i} className="space-y-3 group">
                   <div className="text-stone-400 group-hover:text-stone-950 transition-colors duration-300">{item.icon}</div>
@@ -281,9 +281,9 @@ export default function App() {
       <section id="contact" className="py-32 px-6 bg-stone-900/20">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-24 items-start">
           <div className="sticky top-32">
-            <h2 className="text-5xl md:text-6xl font-serif mb-8 italic leading-[1.1]">Planifiez votre <br /><span className="text-white">trajet de rêve</span></h2>
+            <h2 className="text-5xl md:text-6xl font-serif mb-8 italic leading-[1.1]">Organisez votre <br /><span className="text-white">jour d'exception</span></h2>
             <p className="text-stone-400 mb-12 text-lg leading-relaxed italic font-light">
-              Que ce soit pour un transfert urgent ou une journée de mariage complète, nous adaptons notre service à vos besoins. Devis gratuit et réponse en moins de 2h.
+              Du premier cortège au retour tardif des invités, nous vous accompagnons tout au long de votre célébration. Demandez votre devis sur-mesure pour un mariage sans stress.
             </p>
             
             <div className="space-y-8">
@@ -342,9 +342,9 @@ export default function App() {
               </div>
               
               <div>
-                <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-stone-500 mb-3">Prestation Souhaitée</label>
+                <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-stone-500 mb-3">Service Souhaité</label>
                 <div className="grid grid-cols-2 gap-4">
-                  {["mariage", "transfert", "soiree", "autre"].map((type) => (
+                  {["Cortège Mariés", "Shooting Photo", "Navette Invités", "Autre Événement"].map((type) => (
                     <button
                       key={type}
                       type="button"
@@ -358,10 +358,10 @@ export default function App() {
               </div>
 
               <div>
-                <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-stone-500 mb-3">Précisions</label>
+                <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-stone-500 mb-3">Détails de l'événement</label>
                 <textarea 
                   rows={4}
-                  placeholder="Trajet, date, horaires, déco mariage..."
+                  placeholder="Date du mariage, lieux de cérémonie et réception, nombre d'invités pour les navettes..."
                   className="w-full bg-stone-950/50 border border-white/5 rounded-2xl p-5 focus:outline-none focus:border-white/20 transition-colors text-sm font-light resize-none"
                   value={formData.message}
                   onChange={e => setFormData({...formData, message: e.target.value})}
@@ -388,8 +388,8 @@ export default function App() {
               </div>
             </div>
             <div className="flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold text-stone-500">
-              <a href="#flotte" className="hover:text-white transition-colors">La Flotte</a>
-              <a href="#services" className="hover:text-white transition-colors">Services</a>
+              <a href="#flotte" className="hover:text-white transition-colors">La Voiture</a>
+              <a href="#services" className="hover:text-white transition-colors">Prestations</a>
               <a href="https://www.instagram.com/ririjourj57" className="hover:text-white transition-colors">Instagram</a>
             </div>
           </div>
